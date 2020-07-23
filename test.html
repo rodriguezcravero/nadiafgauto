@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="estiloTest.css" />
+
+    <link rel="shortcut icon" href="#" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Hora de un test!</title>
+  </head>
+  <body>
+    <div class="waves"></div>
+    <div class="container-md">
+      <div class="container text-center">
+        <div class="mx-auto" style="max-width: 25rem;">
+          <a href="index.html"
+            ><div class="btn btn-block btn-secondary mt-5 mb-5">
+              Volver a la página principal
+            </div></a
+          >
+        </div>
+
+        <h1 class="text-center">Test de nivel de inglés</h1>
+
+        <h6>
+          12 preguntas de 3 temas distintos (vocabulario, oido y gramática).
+        </h6>
+        <h6>Luego de responder todas las preguntas, tendrás tus resultados.</h6>
+
+        <p><span class="correcta">En verde las correctas</span></p>
+        <p><span class="incorrecta">En rojo las incorrectas</span></p>
+        <p>
+          <span class="sinRespuesta">En amarillo las que no respondiste</span>
+        </p>
+        <div class="resultadoFinal text-center mx-auto"></div>
+      </div>
+
+      <!-- PREGUNTA 1 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Vocabulario - Pregunta 1</div>
+        <div class="card-body">
+          <h5 class="card-title">¿Cuál es la palabra que sobra?</h5>
+          <p class="card-text">
+            Hay 3 palabras que guardan relación entre sí, y una que no. ¿Cuál
+            es?
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta1"
+              id="Cucumber"
+              value="Cucumber"
+            />
+            <label class="form-check-label" for="Cucumber">
+              Cucumber
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta1"
+              id="Carrot"
+              value="Carrot"
+            />
+            <label class="form-check-label" for="Carrot">
+              Carrot
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta1"
+              id="Parrot"
+              value="Parrot"
+            />
+            <label class="form-check-label" for="Parrot">
+              Parrot
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta1"
+              id="Raspberry"
+              value="Raspberry"
+            />
+            <label class="form-check-label" for="Raspberry">
+              Raspberry
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 2 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Gramática - Pregunta 2</div>
+        <div class="card-body">
+          <h5 class="card-title">¿Cuál es el pronombre correcto?</h5>
+          <p class="card-text">
+            _____ is she? She is my cousin.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta2"
+              id="Why"
+              value="Why"
+            />
+            <label class="form-check-label" for="Why">
+              Why
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta2"
+              id="Who"
+              value="Who"
+            />
+            <label class="form-check-label" for="Who">
+              Who
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta2"
+              id="What"
+              value="What"
+            />
+            <label class="form-check-label" for="What">
+              What
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta2"
+              id="Where"
+              value="Where"
+            />
+            <label class="form-check-label" for="Where">
+              Where
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 3 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Listening - Pregunta 3</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="play1">PLAY</span> &nbsp (Escuchá el audio y respondé)
+          </h5>
+          <p class="card-text">
+            ¿Qué edad tiene Anna?
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta3"
+              id="22"
+              value="22"
+            />
+            <label class="form-check-label" for="22">
+              22
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta3"
+              id="24"
+              value="24"
+            />
+            <label class="form-check-label" for="24">
+              24
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta3"
+              id="37"
+              value="37"
+            />
+            <label class="form-check-label" for="37">
+              37
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta3"
+              id="27"
+              value="27"
+            />
+            <label class="form-check-label" for="27">
+              27
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 4 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Vocabulario - Pregunta 4</div>
+        <div class="card-body">
+          <h5 class="card-title">¿Cuál es la palabra correcta?</h5>
+          <p class="card-text">
+            Bill Gates was a pioneer of home computer _____________.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta4"
+              id="windows"
+              value="windows"
+            />
+            <label class="form-check-label" for="windows">
+              windows
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta4"
+              id="mouse"
+              value="mouse"
+            />
+            <label class="form-check-label" for="mouse">
+              mouse
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta4"
+              id="software"
+              value="software"
+            />
+            <label class="form-check-label" for="software">
+              software
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta4"
+              id="programm"
+              value="programm"
+            />
+            <label class="form-check-label" for="programm">
+              programm
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 5 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Gramática - Pregunta 5</div>
+        <div class="card-body">
+          <h5 class="card-title">¿Cuál es la preposición correcta?</h5>
+          <p class="card-text">
+            I won the lottery _____ my birthday.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta5"
+              id="on"
+              value="on"
+            />
+            <label class="form-check-label" for="on">
+              on
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta5"
+              id="at"
+              value="at"
+            />
+            <label class="form-check-label" for="at">
+              at
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta5"
+              id="for"
+              value="for"
+            />
+            <label class="form-check-label" for="for">
+              for
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta5"
+              id="in"
+              value="in"
+            />
+            <label class="form-check-label" for="in">
+              in
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 6 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Listening - Pregunta 6</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="play2">PLAY</span> &nbsp (Escuchá el audio y respondé)
+          </h5>
+          <p class="card-text">
+            ¿Qué profesión tenía antes la madre?
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta6"
+              id="Abogada"
+              value="Abogada"
+            />
+            <label class="form-check-label" for="Abogada">
+              Abogada
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta6"
+              id="Periodista"
+              value="Periodista"
+            />
+            <label class="form-check-label" for="Periodista">
+              Periodista
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta6"
+              id="Artista"
+              value="Artista"
+            />
+            <label class="form-check-label" for="Artista">
+              Artista
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta6"
+              id="Profesora"
+              value="Profesora"
+            />
+            <label class="form-check-label" for="Profesora">
+              Profesora
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 7 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Vocabulario - Pregunta 7</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            ¿Cuáles son los significados de estas palabras?
+          </h5>
+          <p class="card-text">
+            ROPE - GROCERY - BOMBER
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta7"
+              id="opcion uno"
+              value="opcion uno"
+            />
+            <label class="form-check-label" for="opcion uno">
+              Ropa - Grosería - Bombero
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta7"
+              id="opcion dos"
+              value="opcion dos"
+            />
+            <label class="form-check-label" for="opcion dos">
+              Ropa - Almacén - Bomba
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta7"
+              id="opcion tres"
+              value="opcion tres"
+            />
+            <label class="form-check-label" for="opcion tres">
+              Cuerda - Almacén - Bombardero
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta7"
+              id="opcion cuatro"
+              value="opcion cuatro"
+            />
+            <label class="form-check-label" for="opcion cuatro">
+              Ropero - Grosería - Bombero
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 8 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Gramática - Pregunta 8</div>
+        <div class="card-body">
+          <h5 class="card-title">¿Cuál es el pronombre correcto?</h5>
+          <p class="card-text">
+            _____ cake is delicious.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta8"
+              id="Two"
+              value="Two"
+            />
+            <label class="form-check-label" for="Two">
+              Two
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta8"
+              id="This"
+              value="This"
+            />
+            <label class="form-check-label" for="This">
+              This
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta8"
+              id="These"
+              value="These"
+            />
+            <label class="form-check-label" for="These">
+              These
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta8"
+              id="Those"
+              value="Those"
+            />
+            <label class="form-check-label" for="Those">
+              Those
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 9 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Listening - Pregunta 9</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="play3">PLAY</span> &nbsp (Escuchá el audio y respondé)
+          </h5>
+          <p class="card-text">
+            ¿De qué tema está hablando?
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta9"
+              id="Cine"
+              value="Cine"
+            />
+            <label class="form-check-label" for="Cine">
+              Cine
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta9"
+              id="Turismo"
+              value="Turismo"
+            />
+            <label class="form-check-label" for="Turismo">
+              Turismo
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta9"
+              id="Actores"
+              value="Actores"
+            />
+            <label class="form-check-label" for="Actores">
+              Actores
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta9"
+              id="Libros"
+              value="Libros"
+            />
+            <label class="form-check-label" for="Libros">
+              Libros
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 10 -->
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Vocabulario - Pregunta 10</div>
+        <div class="card-body">
+          <h5 class="card-title">¿Cuál es la respuesta correcta?</h5>
+          <p class="card-text">
+            Julios Iglesias is a _____________.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta10"
+              id="singer"
+              value="singer"
+            />
+            <label class="form-check-label" for="singer">
+              singer
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta10"
+              id="football player"
+              value="football player"
+            />
+            <label class="form-check-label" for="football player">
+              football player
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta10"
+              id="lawyer"
+              value="lawyer"
+            />
+            <label class="form-check-label" for="lawyer">
+              lawyer
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta10"
+              id="all"
+              value="all"
+            />
+            <label class="form-check-label" for="all">
+              All are correct!
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 11 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Gramática - Pregunta 11</div>
+        <div class="card-body">
+          <h5 class="card-title">¿Cuál es el posesivo correcto?</h5>
+          <p class="card-text">
+            What is your _____________ name?
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta11"
+              id="friend's"
+              value="friend's"
+            />
+            <label class="form-check-label" for="friend's">
+              friend's
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta11"
+              id="friend"
+              value="friend"
+            />
+            <label class="form-check-label" for="friend">
+              friend
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta11"
+              id="friends"
+              value="friends"
+            />
+            <label class="form-check-label" for="friends">
+              friends
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta11"
+              id="friendes"
+              value="friendes"
+            />
+            <label class="form-check-label" for="friendes">
+              friendes
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 12 -->
+
+      <div class="card bg-light mb-5 mx-auto" style="max-width: 25rem;">
+        <div class="card-header">Listening - Pregunta 12</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="play4">PLAY</span> &nbsp (Escuchá el audio y respondé)
+          </h5>
+          <p class="card-text">
+            Anna es _____________ desde los 14 años.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta12"
+              id="Bailarina"
+              value="Bailarina"
+            />
+            <label class="form-check-label" for="Bailarina">
+              Bailarina
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta12"
+              id="Vegetariana"
+              value="Vegetariana"
+            />
+            <label class="form-check-label" for="Vegetariana">
+              Vegetariana
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta12"
+              id="Actriz"
+              value="Actriz"
+            />
+            <label class="form-check-label" for="Actriz">
+              Actriz
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pregunta12"
+              id="Voluntaria"
+              value="Voluntaria"
+            />
+            <label class="form-check-label" for="Voluntaria">
+              Voluntaria
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="enviar mx-auto" style="max-width: 25rem;">
+        <div class="btn btn-block btn-success botonEnviar">Enviar!</div>
+      </div>
+
+      <br /><br />
+
+      <!--  -->
+
+      <!--  -->
+
+      <!--  -->
+    </div>
+    <div class="waves2"></div>
+
+    <audio class="audio1" src="files/audio1.wav"></audio>
+    <audio class="audio2" src="files/audio2.wav"></audio>
+    <audio class="audio3" src="files/audio3.wav"></audio>
+    <audio class="audio4" src="files/audio4.wav"></audio>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="test.js"></script>
+  </body>
+</html>

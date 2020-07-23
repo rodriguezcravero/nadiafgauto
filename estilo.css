@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cabin:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa:wght@500&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #222;
+  color: #fff;
+}
+
+/*Poniendo este contenedor, con altura a pantalla completo, Y POSITION RELATIVE, luego pongo el skewed como absolute y funciona*/
+.contenedor {
+  height: 100vh;
+  position: relative;
+  margin: 0px;
+}
+
+.skewed-bg {
+  background: #00b285;
+  padding: 200px 0;
+  -webkit-transform: skew(0deg, -10deg);
+  -moz-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -10deg);
+  -o-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  margin-top: -200px;
+
+  /*para unir el skewed junto con la imagen en un div*/
+  position: absolute;
+  width: 100%;
+}
+
+/*Este sirve para que el texto del skewed no salga torcido*/
+.skewed-bg .content {
+  -webkit-transform: skew(0deg, 10deg);
+  -moz-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 10deg);
+  -o-transform: skew(0deg, 10deg);
+  transform: skew(0deg, 10deg);
+  text-align: center;
+}
+
+.skewed-bg .content .title {
+  padding-top: 100px;
+  font-size: 3em;
+  font-family: "Handlee", cursive;
+}
+
+.skewed-bg .content .text {
+  width: 60%;
+  margin: 25px auto;
+  color: #d3f7ee;
+  font-size: 1.4em;
+}
+
+.imagen {
+  background-image: url("files/2.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+/* .divInfo {
+  background-color: bisque;
+} */
+
+.divInfo p {
+  text-align: justify;
+  font-family: "Baloo 2", cursive;
+  font-size: 1.1em;
+}
+
+.contenedor2 {
+  height: 100vh;
+  background-color: white;
+  padding: 50px 0;
+}
+
+.info1 {
+  background-color: white;
+  height: 100%;
+
+  color: #222;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+  /* grid-template-rows: repeat(auto, minmax(450px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px 15px;
+  /* grid-template-areas: "div1 div2" "div4 div3" "div5 div6"; */
+
+  /* justify-content: stretch; */
+}
+
+.div2,
+.div3,
+.div6 {
+  display: grid;
+  align-content: center;
+}
+
+.imagenInfo {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icono1 {
+  background-image: url("files/icons/student-colour.svg");
+}
+
+.icono2 {
+  background-image: url("files/icons/drawkit-phone-conversation-colour.svg");
+}
+
+.icono3 {
+  background-image: url("files/icons/drawkit-support-man-colour.svg");
+}
+
+.contenedor3 {
+  height: 100vh;
+  /* background-image: url("files/london.jpg");*/
+  background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)),
+    url("files/london.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Amatic SC", cursive;
+}
+
+.textoViaje h2 {
+  margin: auto;
+  font-size: 6em;
+  align-self: center;
+  justify-self: center;
+}
+
+.textoViaje p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.2em;
+}
+
+.textoViaje .textoRojo {
+  font-size: 1em;
+  font-family: "Cabin", sans-serif;
+  color: #00b285;
+  text-shadow: 1px 1px 0 rgb(223, 227, 229), 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contenedor4 {
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.contenedorTest {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.testDoodle {
+  background-image: url("files/icons/drawkit-list-app-colour.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.irAlTest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-three {
+  text-align: center;
+  cursor: pointer;
+  font-size: 2em;
+  margin: 0;
+  position: relative;
+  background-color: #28af87;
+  border: none;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff;
+}
+
+.button-three:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #97b1bf;
+  color: rgb(0, 170, 9);
+}
+
+.button-three:after {
+  content: "";
+  background: #89dd8d;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button-three:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.caja {
+  height: 220px;
+  background-color: rgb(255, 255, 255);
+  color: #222;
+}
+
+.contenedor5 {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.teacher h3 {
+  font-size: 3em;
+}
+
+.teacher p {
+  font-size: 2em;
+}
+
+.iconos {
+  min-width: 400px;
+  font-size: 4em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.developer h5 {
+  font-size: 2em;
+}
+
+.iconosDev {
+  min-width: 400px;
+  font-size: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .developer {
+  margin-top: auto;
+} */
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: white;
+    margin: 0;
+  }
+  .contenedor2 {
+    /* min-height: 100vh;
+    max-height: auto; */
+    height: auto;
+  }
+
+  .imagen {
+    display: none;
+  }
+  .info1 {
+    background-color: white;
+    height: 100%;
+
+    color: #222;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
+    /* gap: 15px 15px; */
+    grid-template-areas:
+      "div1"
+      "div2"
+      "div4"
+      "div3"
+      "div5"
+      "div6";
+  }
+
+  .divInfo {
+    height: 250px;
+  }
+
+  .div1 {
+    grid-area: div1;
+  }
+
+  .div2 {
+    grid-area: div2;
+  }
+
+  .div3 {
+    grid-area: div3;
+  }
+
+  .div4 {
+    grid-area: div4;
+  }
+
+  .div5 {
+    grid-area: div5;
+  }
+
+  .div6 {
+    grid-area: div6;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+    margin: 0;
+  }
+  .skewed-bg {
+    padding: 200px 0;
+    height: auto;
+  }
+
+  .skewed-bg .content .title {
+    font-size: 2.5em;
+  }
+
+  .skewed-bg .content .text {
+    /* margin: 25px 25px; */
+    font-size: 1.2em;
+    width: 90%;
+  }
+
+  .contenedor2 {
+    height: auto;
+    margin: 0 2em;
+  }
+
+  .imagen {
+    display: none;
+  }
+
+  .divInfo p {
+    font-size: 0.9em;
+  }
+
+  .div2 {
+    margin-top: 15px;
+  }
+
+  .contenedor3 {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .textoViaje h2 {
+    /* margin: auto; */
+    font-size: 2.5em;
+    /* align-self: center; */
+    /* justify-self: center; */
+  }
+
+  .textoViaje p {
+    font-family: "Cabin", sans-serif;
+    font-size: 0.9em;
+    margin: 0 1em 1.2em;
+    text-align: justify;
+  }
+
+  .button-three {
+    font-size: 1.1em;
+
+    padding: 20px;
+    width: 200px;
+
+    color: #fff;
+  }
+
+  .textoViaje .textoRojo {
+    font-size: 1em;
+    font-family: "Cabin", sans-serif;
+    color: #00b285;
+    text-shadow: 1px 1px 0 rgb(223, 227, 229), 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .contenedor4 {
+    min-height: 100vh;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .caja h3 {
+    font-size: 1.4em;
+  }
+
+  .caja p {
+    text-align: justify;
+    font-family: "Baloo 2", cursive;
+    font-size: 0.9em;
+  }
+
+  .contenedorTest {
+    min-height: 100vh;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .teacher h3 {
+    font-size: 1.5em;
+  }
+
+  .teacher p {
+    font-size: 1em;
+    margin: 50px 0;
+  }
+
+  .iconos {
+    font-size: 2em;
+  }
+
+  .teacher,
+  .developer {
+    padding-bottom: 50px;
+  }
+
+  .developer h5 {
+    font-size: 1em;
+    margin-bottom: 40px;
+  }
+
+  .iconosDev {
+    font-size: 1.5em;
+  }
+}

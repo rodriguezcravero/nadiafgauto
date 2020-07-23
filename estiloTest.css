@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa:wght@500&display=swap");
+
+.correcta {
+  background-color: rgb(180, 241, 188);
+}
+
+.incorrecta {
+  background-color: rgb(221, 174, 166);
+}
+
+.sinRespuesta {
+  background-color: lemonchiffon;
+}
+
+.waves {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url("files/wave.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.waves2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url("files/wave2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.resultadoFinal {
+  width: 550px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: whitesmoke;
+}
+
+.play1,
+.play2,
+.play3,
+.play4 {
+  cursor: pointer;
+}
+.enviar .botonEnviar {
+  background-color: rgb(52, 138, 63);
+}
+
+@media screen and (max-width: 600px) {
+  .resultadoFinal {
+    font-family: "Baloo 2", cursive;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(191, 201, 224);
+  }
+}
