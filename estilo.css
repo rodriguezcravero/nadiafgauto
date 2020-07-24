@@ -13,11 +13,21 @@ body {
   color: #fff;
 }
 
+.collapse,
+nav,
+.verde {
+  background-color: #00b285c2;
+}
+
 /*Poniendo este contenedor, con altura a pantalla completo, Y POSITION RELATIVE, luego pongo el skewed como absolute y funciona*/
 .contenedor {
   height: 100vh;
   position: relative;
   margin: 0px;
+}
+
+.contenedorMovil {
+  display: none;
 }
 
 .skewed-bg {
@@ -45,13 +55,13 @@ body {
   text-align: center;
 }
 
-.skewed-bg .content .title {
+.content .title {
   padding-top: 100px;
   font-size: 3em;
   font-family: "Handlee", cursive;
 }
 
-.skewed-bg .content .text {
+.content .text {
   width: 60%;
   margin: 25px auto;
   color: #d3f7ee;
@@ -62,6 +72,7 @@ body {
   background-image: url("files/2.jpg");
   height: 100vh;
   background-attachment: fixed;
+  background-size: cover;
   z-index: -1;
 }
 
@@ -258,7 +269,7 @@ body {
 }
 
 .iconos {
-  min-width: 400px;
+  min-width: 250px;
   font-size: 4em;
   display: flex;
   justify-content: space-evenly;
@@ -269,7 +280,7 @@ body {
 }
 
 .iconosDev {
-  min-width: 400px;
+  min-width: 250px;
   font-size: 3em;
   display: flex;
   justify-content: space-evenly;
@@ -283,6 +294,38 @@ body {
   body {
     background-color: white;
     margin: 0;
+  }
+
+  .contenedor {
+    display: none;
+  }
+
+  .contenedorMovil {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 40px; */
+    background-color: rgb(255, 255, 255);
+    background-image: url("files/2.svg"), url("files/plus.svg");
+    /* background-position: right; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .ocultarMovil {
+    display: none;
+  }
+
+  .content .title {
+    font-size: 2em;
+    width: 85%;
+    margin: auto;
+  }
+
+  .content .text {
+    font-size: 1.2em;
+    width: 90%;
   }
   .contenedor2 {
     /* min-height: 100vh;
@@ -341,24 +384,10 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   body {
     background-color: white;
     margin: 0;
-  }
-  .skewed-bg {
-    padding: 200px 0;
-    height: auto;
-  }
-
-  .skewed-bg .content .title {
-    font-size: 2.5em;
-  }
-
-  .skewed-bg .content .text {
-    /* margin: 25px 25px; */
-    font-size: 1.2em;
-    width: 90%;
   }
 
   .contenedor2 {
@@ -371,7 +400,8 @@ body {
   }
 
   .divInfo p {
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: bold;
   }
 
   .div2 {
@@ -426,7 +456,8 @@ body {
   .caja p {
     text-align: justify;
     font-family: "Baloo 2", cursive;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: bold;
   }
 
   .contenedorTest {
