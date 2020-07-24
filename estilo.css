@@ -180,11 +180,25 @@ nav,
 .contenedorTest {
   height: 100vh;
   background-color: rgb(255, 255, 255);
+  max-width: 700px;
   width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.caja {
+  height: 220px;
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  /* width: 70%; */
+}
+
+.caja p {
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  font-size: 1.3em;
 }
 
 .testDoodle {
@@ -242,12 +256,6 @@ nav,
   margin: 0;
   opacity: 1;
   transition: 0s;
-}
-
-.caja {
-  height: 220px;
-  background-color: rgb(255, 255, 255);
-  color: #222;
 }
 
 .contenedor5 {
