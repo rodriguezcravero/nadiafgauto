@@ -9,6 +9,38 @@
   background-size: cover;
 }
 
+.contenedor1 {
+  height: 120vh;
+}
+
+.verde {
+  height: 65%;
+  background-color: #28b76d;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav {
+  display: flex;
+}
+
+.cartel {
+  height: 35%;
+  background-image: url("files/cartel.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contenedor2 {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
 .navbar {
   background-color: #28b76d;
 }

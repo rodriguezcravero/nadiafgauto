@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cabin:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Teko:wght@300&display=swap");
 
 html,
 body {
@@ -16,7 +17,7 @@ body {
 .collapse,
 nav,
 .verde {
-  background-color: #00b285c2;
+  background-color: #00b285;
 }
 
 /*Poniendo este contenedor, con altura a pantalla completo, Y POSITION RELATIVE, luego pongo el skewed como absolute y funciona*/
@@ -69,9 +70,10 @@ nav,
 }
 
 .imagen {
-  background-image: url("files/2.jpg");
+  background-image: url("files/fondo1.jpg");
   height: 100vh;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -155,7 +157,7 @@ nav,
 
 .textoViaje h2 {
   margin: auto;
-  font-size: 6em;
+  font-size: 4.7em;
   align-self: center;
   justify-self: center;
 }
@@ -260,7 +262,7 @@ nav,
 
 .contenedor5 {
   height: 100vh;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -268,35 +270,128 @@ nav,
   flex-direction: column;
 }
 
-.teacher h3 {
-  font-size: 3em;
+.sitiosInteres {
+  background-color: rgb(255, 255, 255);
+  height: 50%;
+  width: 100%;
 }
 
-.teacher p {
-  font-size: 2em;
+.tituloLogos {
+  grid-area: 1 / 1 / 2 / 4;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.logos {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.logoBox {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loguito {
+  width: 80%;
+  height: 75%;
+}
+
+.loguito1 {
+  background-image: url("files/logos/1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.loguito2 {
+  background-image: url("files/logos/2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.loguito3 {
+  background-image: url("files/logos/3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.loguito4 {
+  background-image: url("files/logos/4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.loguito5 {
+  background-image: url("files/logos/5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.loguito6 {
+  background-image: url("files/logos/6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.infoBox {
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  font-family: "Abel", sans-serif;
+  font-size: 1.5em;
+}
+
+.datosContacto {
+  background-color: rgb(34, 7, 54);
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  line-height: 2;
+}
+
+.teacher {
+  width: 25%;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.developer {
+  width: 25%;
+  margin: auto;
 }
 
 .iconos {
-  min-width: 250px;
-  font-size: 4em;
+  font-size: 1.5em;
   display: flex;
   justify-content: space-evenly;
 }
 
 .developer h5 {
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 .iconosDev {
-  min-width: 250px;
-  font-size: 3em;
+  min-width: 150px;
+  font-size: 1.2em;
   display: flex;
   justify-content: space-evenly;
 }
-
-/* .developer {
-  margin-top: auto;
-} */
 
 @media screen and (max-width: 900px) {
   body {
@@ -310,15 +405,27 @@ nav,
 
   .contenedorMovil {
     display: block;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
-    /* padding-top: 40px; */
-    background-color: rgb(255, 255, 255);
-    background-image: url("files/2.svg"), url("files/plus.svg");
-    /* background-position: right; */
+  }
+
+  .pizarron {
+    height: 65%;
+    background-color: #00b285;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .cartel {
+    height: 35%;
+    background-image: url("files/cartel.jpg");
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+    background-size: contain;
   }
 
   .ocultarMovil {
@@ -326,18 +433,21 @@ nav,
   }
 
   .content .title {
-    font-size: 2em;
+    font-size: 1.5em;
     width: 85%;
     margin: auto;
+    line-height: 1.5;
+  }
+
+  .bulb {
+    height: 200px;
   }
 
   .content .text {
-    font-size: 1.2em;
+    font-size: 0.9em;
     width: 90%;
   }
   .contenedor2 {
-    /* min-height: 100vh;
-    max-height: auto; */
     height: auto;
   }
 
@@ -389,6 +499,107 @@ nav,
 
   .div6 {
     grid-area: div6;
+  }
+
+  .contenedor5 {
+    min-height: 100vh;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .sitiosInteres {
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    width: 100%;
+  }
+
+  .tituloLogos {
+    grid-area: 1 / 1 / 2 / 4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-family: "Abel", sans-serif;
+    font-size: 1.5em;
+  }
+
+  .logos {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr); */
+  }
+  .logoBox {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .loguito {
+    width: 80%;
+    height: 60px;
+  }
+
+  .infoBox {
+    font-size: 1em;
+  }
+
+  .datosContacto {
+    min-height: 50vh;
+  }
+
+  .teacher {
+    width: 75%;
+    margin: auto;
+    font-size: 1em;
+    border: 1px solid white;
+    border-radius: 2px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%; */
+  }
+
+  .teacher h3 {
+    margin-top: 1em;
+  }
+
+  .teacher .iconos {
+    margin-bottom: 1em;
+  }
+
+  .developer {
+    width: 75%;
+    margin: auto;
+  }
+
+  .iconos {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .developer h5 {
+    font-size: 1em;
+  }
+
+  .iconosDev {
+    min-width: 150px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -477,32 +688,5 @@ nav,
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  }
-
-  .teacher h3 {
-    font-size: 1.5em;
-  }
-
-  .teacher p {
-    font-size: 1em;
-    margin: 50px 0;
-  }
-
-  .iconos {
-    font-size: 2em;
-  }
-
-  .teacher,
-  .developer {
-    padding-bottom: 50px;
-  }
-
-  .developer h5 {
-    font-size: 1em;
-    margin-bottom: 40px;
-  }
-
-  .iconosDev {
-    font-size: 1.5em;
   }
 }
