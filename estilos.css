@@ -20,6 +20,12 @@ nav,
   background-color: #00b285;
 }
 
+.verde button {
+  color: whitesmoke;
+  /* text-decoration: underline; */
+  font-size: 1.2em;
+}
+
 .navbar1 {
   display: flex;
   justify-content: center;
@@ -292,6 +298,7 @@ nav,
   background-color: rgb(255, 255, 255);
   height: 50%;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .tituloLogos {
@@ -312,6 +319,7 @@ nav,
   grid-template-rows: 1fr 2fr 2fr;
   row-gap: 20px;
 }
+
 .logoBox {
   background-color: rgb(255, 255, 255);
   display: flex;
