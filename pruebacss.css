@@ -13,7 +13,11 @@
   height: 120vh;
 }
 
-.verde {
+nav {
+  display: flex;
+}
+
+.pizarron {
   height: 65%;
   background-color: #28b76d;
   display: flex;
@@ -22,10 +26,6 @@
   justify-content: center;
   align-items: center;
   color: white;
-}
-
-nav {
-  display: flex;
 }
 
 .cartel {

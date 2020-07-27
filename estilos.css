@@ -20,6 +20,19 @@ nav,
   background-color: #00b285;
 }
 
+.navbar1 {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar1 a {
+  margin: 0 25px;
+}
+
+.navbarMovil {
+  display: none;
+}
+
 /*Poniendo este contenedor, con altura a pantalla completo, Y POSITION RELATIVE, luego pongo el skewed como absolute y funciona*/
 .contenedor {
   height: 100vh;
@@ -66,7 +79,8 @@ nav,
   width: 60%;
   margin: 25px auto;
   color: #d3f7ee;
-  font-size: 1.4em;
+  font-family: "Handlee", cursive;
+  font-size: 1.6em;
 }
 
 .imagen {
@@ -191,10 +205,14 @@ nav,
 }
 
 .caja {
-  height: 220px;
+  /* height: 220px; */
   background-color: rgb(255, 255, 255);
   color: #222;
   /* width: 70%; */
+}
+
+.testDoodle {
+  height: 180px;
 }
 
 .caja p {
@@ -291,7 +309,8 @@ nav,
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+  row-gap: 20px;
 }
 .logoBox {
   background-color: rgb(255, 255, 255);
@@ -369,6 +388,14 @@ nav,
   width: 25%;
   margin: auto;
   font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.teacher a {
+  color: white;
 }
 
 .developer {
@@ -393,10 +420,22 @@ nav,
   justify-content: space-evenly;
 }
 
+.iconosDev a {
+  color: white;
+}
+
 @media screen and (max-width: 900px) {
   body {
     background-color: white;
     margin: 0;
+  }
+
+  .navbar1 {
+    display: none;
+  }
+
+  .navbarMovil {
+    display: block;
   }
 
   .contenedor {
@@ -499,6 +538,14 @@ nav,
 
   .div6 {
     grid-area: div6;
+  }
+
+  .contenedor4,
+  .contenedorTest {
+    min-height: 100vh;
+    height: auto;
+    width: 85%;
+    margin: auto;
   }
 
   .contenedor5 {
